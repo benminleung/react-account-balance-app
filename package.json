@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://benminleung.github.io/react-account-balance-app",
+  "homepage": "https://benminleung.github.io/react-account-balance-app",
   "devDependencies": {
     "gh-pages": "^1.2.0"
   }

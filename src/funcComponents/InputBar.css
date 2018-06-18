@@ -1,0 +1,64 @@
+.InputBar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3em, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    grid-gap: 1em;
+}
+    .invalid {
+        color: red;
+        height: 1.2em;
+    }
+
+.InputBar-description{
+    grid-column: span 3;
+    grid-row: span 1;
+    /* width: 20em; */
+    /* max-width: 100%; */
+}
+
+.InputBar-amount {
+    /* width: 10em; */
+    max-width: 100%;
+}
+
+.InputBar-type {
+    grid-column: span 2;
+    /* width: 10em; */
+    max-width: 100%;
+}
+
+.input {
+    line-height: 2em;
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 1em;
+    /* padding: .5em; */
+    padding: 0.5em 0;
+    border: none;
+    font: inherit;
+}
+
+.submitBox{
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
+}
+    .submitButton {
+        width: 100%;
+        max-width: 30em;
+        padding: 1em 0;
+        margin: 0 auto;
+    }
+
+.amountInputWrapper {
+    position: relative;
+    display:inline;
+}
+    .amountInputWrapper:before {
+        content: '€';
+        position: absolute;
+        top: 0;
+        right: 1em;
+        z-index: 1;
+    }

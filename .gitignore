@@ -16,6 +16,8 @@
 .env.test.local
 .env.production.local
 
+src/assignment.jpg
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*

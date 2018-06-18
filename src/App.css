@@ -2,6 +2,10 @@ p, h1, h2, h3, h4 {
     margin: 0;
 }
 
+body {
+    background: gray;
+}
+
 section > * {
     width: 90vw;
     max-width: 70em;

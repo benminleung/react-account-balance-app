@@ -1,0 +1,44 @@
+.SecBody {
+    background: gray;
+    padding: 1em 0;
+}
+
+.SecBody-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-gap: 1em;
+    min-height: 30em;
+}
+
+.type {
+    display: grid;
+    grid-template-rows: 0fr;
+    align-content: start;
+    border: thin solid black;
+    border-radius: 5px;
+    height: 100%;
+    padding: 0 1em;
+}
+    .typeTitle {
+        justify-self: center;
+    }
+
+.transaction {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    margin: .5em 0;
+    border-bottom: thin solid black;
+    justify-content: space-between;
+}
+    .transactionAmount {
+        grid-row: 1 / -1;
+        font-size: 2em;
+    }
+.income .transactionAmount {
+    color: darkgreen;
+}
+.expenditure .transactionAmount {
+    color: darkred;
+}
